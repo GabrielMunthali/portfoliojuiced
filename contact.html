@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | Gabriel Munthali</title>
+
+
+    
+    <link rel="stylesheet" href="Assets/Css/owl.carousel.min.css">
+    <link rel="stylesheet" href="Assets/Css/owl.theme.default.min.css">
+    <link rel="stylesheet" href=" Assets/Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href=" Assets/Fontawesome/css/all.min.css">
+    <link rel="stylesheet" href=" Assets/Css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="Assets/Js/jquery.min.js" defer></script>
+    <script src="Assets/Js/owl.carousel.min.js" defer></script>
+    <script src="Assets/Bootstrap/js/bootstrap.bundle.min.js" defer></script>
+    <script src="Assets/Js/script.js" defer></script>
+    
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg sticky-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img class="img-fluid" src="Assets/Img/me.jpg" alt="" srcset=""></a>
+                    <div class="d-lg-none d-flex align-items-center gap-3">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                            <span class="fa-solid fa-ellipsis-vertical"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                        <a href=""><button class="ghost-btn px-4 py-3">Download CV</button></a>
+                    </div>
+                </div>
+            </nav>
+            <div class="offcanvas canvas-custom offcanvas-end" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="canvas-list mb-5">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Plants</a></li>
+                        <li><a href="">Vases</a></li>
+                        <li><a href="">Tools</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                    <ul class="canvas-socials">
+                        <li><a href=""><span class="fa-brands fa-light fa-facebook"></span></a></li>
+                        <li><a href=""><span class="fa-brands fa-light fa-x"></span></a></li>
+                        <li><a href=""><span class="fa-brands fa-light fa-instagram"></span></a></li>
+                        <li><a href=""><span class="fa-brands fa-light fa-whatsapp"></span></a></li>
+                        <li><a href=""><span class="fa-brands fa-light fa-tiktok"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content modal-pop">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="searchModalLabel">Enter Keywords</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="d-flex" role="search">
+                                <input class="nav-search form-control me-2" type="search" placeholder="Search ..."
+                                    aria-label="Search">
+                                <span class="search-icon mr-2">
+                                    <i class="fa fa-light fa-search"></i>
+                                </span>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 email-form">
+                <h4>Send an email <span class="fa fa-solid fa-envelope"></span></h4>
+                <form action="" class="row">
+                    <div class="col-md-6">
+                        <label for="firstName" class="contact-label">First Name:</label>
+                        <input type="text" class="form-control contact-form" placeholder="e.g Gabriel">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="firstName" class="contact-label">Last Name:</label>
+                        <input type="text" class="form-control contact-form" placeholder="e.g Munthali">
+                    </div>
+                    <div class="col-md-12">
+                        <label for="email" class="contact-label">Email:</label>
+                        <input type="email" class="form-control contact-form" placeholder="e.g gabmunthali@gmail.com">
+                    </div>
+                    <div class="col-md-12">
+                        <label for="email" class="contact-label">Subject:</label>
+                        <input type="text" class="form-control contact-form" placeholder="e.g Website Development">
+                    </div>
+                    <div class="col-md-12">
+                        <label for="message" class="contact-label">Message:</label>
+                        <textarea name="" id="" cols="30" rows="10" class="form-control contact-text" placeholder=""></textarea>
+                    </div>
+                    <div class="col-md-12">
+                        <button type="submit" class="btn contact-btn px-4 py-3">Send</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6 contact-address">
+                <h4>Write me <span class="fa fa-solid fa-feather"></span></h4>
+                <ul class="list-unstyled">
+                    <li><span class="fa fa-solid fa-user"></span> Gabriel Munthali</li>
+                    <li><span class="fa fa-solid fa-building"></span> National Registration Bureau</li>
+                    <li><span class="fa fa-solid fa-address-book"></span> Phalombe District Council</li>
+                    <li><span class="fa fa-solid fa-signs-post"></span> Private Bag 32</li>
+                    <li><span class="fa fa-solid fa-location-dot"></span> Phalombe</li>
+                    <li><span class="fa fa-solid fa-phone"></span> +265993996717</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer class="foot">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-12 d-flex justify-content-between flex-column flex-md-row gap-4 mb-5">
+                    <div class="my-brand mb-5">
+                        <img class="img-fluid" src="Assets/Img/me.jpg" alt="">
+                    </div>
+                    <div class="quick-links mb-5">
+                        <h4 class="mb-5">Quick Links <span class="fa fa-solid fa-arrow-up-right-from-square"></span>
+                        </h4>
+                        <ul class="">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="connect mb-5">
+                        <h4 class="mb-5">Lets Connect <span class="fa fa-solid fa-hashtag"></span></h4>
+                        <ul>
+                            <li><a href=""><span class="fa fa-brands fa-facebook"></span></a></li>
+                            <li><a href=""><span class="fa fa-brands fa-x-twitter"></span></a></li>
+                            <li><a href=""><span class="fa fa-brands fa-linkedin"></span></a></li>
+                            <li><a href=""><span class="fa fa-brands fa-github"></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="coffee mb-5">
+                        <h4>Buy me coffee <span class="fa fa-solid fa-mug-hot"></span></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 copyright">
+                    <p>With <span class="fa fa-solid fa-heart"></span> By Gabriel Munthali </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+        
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

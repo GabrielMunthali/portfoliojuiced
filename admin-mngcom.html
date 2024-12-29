@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Manage Comments | Admin</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="Assets/Css/admin.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+		integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+		integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+		crossorigin="anonymous"></script>
+	<script src="js/owl.carousel.min.js" defer></script>
+	<script src="js/script.js" defer></script>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<!-- Side Nav -->
+			<aside class="col-md-2 d-none d-lg-block">
+				<nav class="side-nav">
+					<a class="navbar-brand" href="#">Hello, </a>
+					<ul class="flex-column side-links list-unstyled mt-5">
+						<li class="side-link d-flex justify-content-between">
+							<a href="#"><i class="fa fa-solid fa-home"></i> Home</a>
+							<span class="side-count"></span>
+						</li>
+						<li class="side-link d-flex justify-content-between">
+							<a href="#"><i class="fa fa-solid fa-newspaper"></i> Blog Posts</a>
+							<span class="side-count">18</span>
+						</li>
+						<li class="side-link d-flex justify-content-between">
+							<a href="#"><i class="fa fa-solid fa-comments"></i> Engagement</a>
+							<span class="side-count">2</span>
+						</li>
+						<li class="side-link d-flex justify-content-between">
+							<a href="#"><i class="fa fa-solid fa-eye"></i> Views</a>
+							<span class="side-count"></span>
+						</li>
+						<li class="side-link d-flex justify-content-between">
+							<a href="#"><i class="fa fa-solid fa-chart-simple"></i> Link</a>
+							<span class="side-count"></span>
+						</li>
+					</ul>
+                    <button class="btn-primary ghost-btn px-4 py-3 mt-5">Logout <span class="ml-3"><i class="fa fa-solid fa-right-from-bracket"></i></span></button>
+				</nav>
+                
+			</aside>
+			<div class="offcanvas canvas-custom offcanvas-start" tabindex="-1" id="offcanvasExample"
+				aria-labelledby="offcanvasExampleLabel">
+				<div class="offcanvas-header d-flex justify-content-end">
+					<button type="button" class="canvas-close" data-bs-dismiss="offcanvas"
+						aria-label="Close"><i class="fa fa-solid fa-x fa-x2"></i></button>
+				</div>
+				<nav class="admin-canvas" aria-label="Canvas Nav">
+					<a class="canvas-brand" href="#">Admin </a>
+					<ul class="flex-column canvas-links list-unstyled mt-4">
+						<li class="admin-link d-flex justify-content-between">
+							<a href="#"><i class="fa fa-solid fa-home"></i> Home</a>
+							<span class="admin-count"></span>
+						</li>
+						<li class="canvas-link d-flex justify-content-between">
+							<a href="#"><i class="fa fa-solid fa-newspaper"></i> Blog Posts</a>
+							<span class="admin-count">18</span>
+						</li>
+						<li class="canvas-link d-flex justify-content-between">
+							<a href="#"><i class="fa fa-solid fa-comments"></i> Engagement</a>
+							<span class="admin-count">2</span>
+						</li>
+						<li class="canvas-link d-flex justify-content-between">
+							<a href="#"><i class="fa fa-solid fa-eye"></i> Views</a>
+							<span class="admin-count"></span>
+						</li>
+						<li class="canvas-link d-flex justify-content-between">
+							<a href="#"><i class="fa fa-solid fa-chart-simple"></i> Analytics</a>
+							<span class="admin-count"></span>
+						</li>
+					</ul>
+				</nav>
+                <button class="px-4 py-3 cta-btn">Logout <i class="fa fa-solid fa-right-from-bracket"></i></button>
+				
+			</div>
+			<!-- Main Content -->
+			<main class="col-md-10">
+				<nav class="main-nav navbar navbar-expand-lg" aria-label="top nav" >
+					<div class="container-fluid">
+						<span>Overview</span>
+						<div class="d-flex justify-content-end gap-3">
+							<div class="flex-grow-1">
+								<form class="d-flex" role="search">
+									<input class="nav-search form-control me-2" type="search" placeholder="Search ..."
+										aria-label="Search">
+									<span class="search-icon">
+										<i class="fa fa-light fa-search"></i>
+									</span>
+								</form>
+							</div>
+							<div class="dash-user flex-grow-0">
+								<a href="#"><img class="img-fluid" src="Assets/Img/me.jpg" alt=""></a>
+							</div>
+							<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+								data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+								<span class="fa-solid fa-ellipsis-vertical"></span>
+							</button>
+						</div>
+					</div>
+				</nav>
+				<div class="row mt-4">
+					<div class="col-md-12 admin-upload">
+						<h4>Manage Comments <span class="fa fa-solid fa-screwdriver-wrench"></span></h4>
+					</div>
+                    <div class="col-md-12">
+                        <div class="mngcom">
+                            <div class="d-flex gap-3 mngcom-header">
+                                <img src="" alt="">
+                                <p>This is a title for a blog post</p>
+                            </div>
+                            <div class="d-flex justify-content-between com-bod">
+                                <div class="d-flex gap-3">
+                                    <img src="" alt="" srcset="">
+                                    <div>
+										<h4>Name</h4>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                        <span>2 mins</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span><a href="">Delete <i class="fa fa-solid fa-trash"></i></a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+			</main>
+		</div>
+	</div>
+</body>
+
+</html>
